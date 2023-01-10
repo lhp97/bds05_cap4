@@ -40,4 +40,8 @@ public class Genre implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Set<Movie> getMovies() {
+        return movies;
+    }
 }

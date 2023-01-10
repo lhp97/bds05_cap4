@@ -29,6 +29,11 @@ public class Review implements Serializable {
         this.text = text;
     }
 
+    public Review(Review review) {
+        this.id = review.getId();
+        this.text = review.getText();
+    }
+
     public Long getId() {
         return id;
     }
@@ -43,5 +48,21 @@ public class Review implements Serializable {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public void setMovie(Movie movie) {
+        this.movie = movie;
+    }
+
+    public Movie getMovie() {
+        return movie;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
     }
 }
